@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_findsubstrlen.c                                 :+:      :+:    :+:   */
+/*   ft_strdlen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 14:38:33 by japarbs           #+#    #+#             */
-/*   Updated: 2019/05/12 03:45:32 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/06 22:06:11 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_findsubstrlen(char const *str, char c)
+size_t	ft_strdlen(char const *str, char c)
 {
-	int	i;
-	int	len;
+	size_t	i;
+	size_t	len;
 
 	i = 0;
 	len = 0;
