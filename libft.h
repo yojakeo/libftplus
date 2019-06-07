@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 18:48:11 by japarbs           #+#    #+#             */
-/*   Updated: 2019/05/29 17:52:48 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/06 22:07:22 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ char				*ft_strcpy(const char *dst, const char *src);
 char				*ft_strdup(const char *str);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlen(const char *str);
+size_t				ft_strdlen(char const *str, char c);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
@@ -107,7 +108,6 @@ char				*ft_strtrim(char const *s);
 /*
 ** Extra Functions
 */
-int					ft_findsubstrlen(char const *str, char c);
 int					ft_findsubstrs(char const *str, char c);
 char				*ft_strcut(char const *str, size_t start, size_t end);
 
