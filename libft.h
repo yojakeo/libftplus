@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 18:48:11 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/06 22:07:22 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/14 23:06:34 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,6 +105,7 @@ char				*ft_strnew(size_t size);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
+char				*ft_strrealloc(char *str, char *tmp);
 /*
 ** Extra Functions
 */
