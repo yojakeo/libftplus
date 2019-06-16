@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/14 22:42:27 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/14 23:31:18 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/15 21:35:47 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 char	*ft_strrealloc(char *str, char *tmp)
 {
 	char	*res;
+
 	ft_strdel(&str);
 	if (!(res = ft_strdup(tmp)))
 		return (NULL);
