@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 18:48:11 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 01:21:54 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/21 20:41:19 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,12 @@
 # include <stdlib.h>
 # include <limits.h>
 
-# define BUFF_SIZE 32
-
 typedef struct		s_list
 {
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
-
-/*
-**	Get Next Line
-*/
-int					process_line(int fd, char **line, char **fdarr, int bres);
-int					get_next_line(const int fd, char **line);
-
 /*
 ** Print Functions
 */

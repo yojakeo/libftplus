@@ -5,36 +5,43 @@
 #                                                     +:+ +:+         +:+      #
 #    By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/04/29 10:33:30 by japarbs           #+#    #+#              #
-#    Updated: 2019/06/17 03:13:32 by japarbs          ###   ########.fr        #
+#    Created: 2018/04/18 14:31:20 by rreedy            #+#    #+#              #
+#    Updated: 2019/06/21 19:52:02 by japarbs          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
-CFLAGS = -Wall -Werror -Wextra
-OBJ = *.o
-SRCF = *.c
-INCLUDES = libft.h
+NAME := libft.a
+TEST := main
+
+include config.mk
+
+.PHONY: $(MODS) modules test all clean fclean re
 
 all: $(NAME)
 
-$(NAME):
-	gcc $(CFLAGS) -I $(INCLUDES) -c $(SRCF)
-	ar rc $(NAME) *.o
+$(NAME): modules
+	@ printf "$(COMPILE_COLOR)Creating  $(NAME_COLOR)$(NAME) "
+	@ ar rc $(NAME) $(shell find srcs -name "*.o")
+	@ printf "$(DOTS_COLOR)."
+	@ ranlib $(NAME)
+	@ printf "."
+	@ printf " $(FINISH_COLOR) done$(CLEAR_COLOR)\n"
 
-debug:
-	gcc $(CFLAGS) -g -I $(INCLUDES) -c $(SRCF)
-	ar rc $(NAME) *.o
+modules:
+	@ $(foreach MOD, $(MODS), $(MAKE) --no-print-directory -f ./modules/$(MOD).mk;)
+
+test: all $(TEST).o
+	$(CC) $(CFLAGS) $(TEST).o $(INCLUDES) $(LFLAGS)
 
 clean:
-	/bin/rm -f $(OBJ)
+	@- $(RM) $(TEST).o
+	@ $(foreach MOD, $(MODS), $(MAKE) --no-print-directory -f ./modules/$(MOD).mk clean;)
 
-fclean:
-	/bin/rm -f $(NAME)
-	/bin/rm -f $(OBJ)
+fclean: clean
+	@- $(RM) a.out
+	@- if [ -f $(NAME) ]; then \
+			$(RM) $(NAME); \
+			printf "$(DELETE_COLOR)Removing $(NAME_COLOR)$(NAME)\n"; \
+	   fi;
 
 re: fclean all
-
-redebug: fclean debug
-
-.PHONY: all clean fclean re
