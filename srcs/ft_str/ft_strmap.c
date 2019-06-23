@@ -6,11 +6,17 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 14:54:30 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:20 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 21:05:29 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Creates a string the same size of the given string. Travels through the
+**	string and applies a function to each char that's stored in the new string.
+**	After the string is mapped the function returns the new mapped string.
+*/
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {

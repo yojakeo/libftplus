@@ -6,12 +6,16 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 01:29:22 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:25 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 20:59:39 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
+/*
+**	Trims the string from one index to another. Returning a new string
+**	the chars in and between those indexes.
+*/
 char	*ft_strcut(char const *str, size_t start, size_t end)
 {
 	size_t		len;

@@ -6,11 +6,20 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 15:03:41 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:22 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 07:13:22 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Concatenates two strings together while asuring NULL termination from the
+**	given size of the dest. If dst is longer than the size given it'll abort
+**	and return the product of dstsize and the len of src. Else while it's in
+**	src and the index is one less than the dstsize, it copies to the dest and
+**	after either NULL is reached in src or i is no longer 1 less than dstsize
+**	we NULL the end of dst and return the product of the two strings.
+*/
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

@@ -6,16 +6,20 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 15:57:51 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/22 00:54:22 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 06:43:14 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
 /*
-**	kljsdhflkjadhsg
+**	Takes in a string and a delimiting char and splices it into a **char.
+**	counts the sub strings by the given delimiter and allocates an approrately
+**	sized **char to fit all substrs. While the current substr index is less
+**	than the total ammount of substrs it copies to the **char's current index
+**	till it hits a delimit or \0. keeps looping to the next index and returns
+**	the **char.
 */
-
 
 char	**ft_strsplit(char const *s, char c)
 {

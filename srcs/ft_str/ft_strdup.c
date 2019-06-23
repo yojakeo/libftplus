@@ -6,11 +6,15 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 10:54:10 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:24 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 20:53:43 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Takes a string and duplicates it to a fresh string. Returning said string.
+*/
 
 char	*ft_strdup(const char *str)
 {

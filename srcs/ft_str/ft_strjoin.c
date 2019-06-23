@@ -6,11 +6,18 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 16:42:45 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:22 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 07:17:49 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Two strings are passed to be joined together. First the total length of
+**	both strings are allocated to *newstr. The first string is copied into
+**	the fresh string and then concatenates the 2nd string, returning the
+**	joined strings.
+*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

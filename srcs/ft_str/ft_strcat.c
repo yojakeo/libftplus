@@ -6,11 +6,16 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 14:30:18 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:27 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 21:12:33 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Concatenates two strings together. While it's in src it copies to the dest
+**	and after NULL is reached in src it NULLs the end and returns the dst.
+*/
 
 char	*ft_strcat(char *s1, const char *s2)
 {

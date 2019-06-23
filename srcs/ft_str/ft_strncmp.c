@@ -6,11 +6,17 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 14:38:43 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:19 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 21:55:59 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Compares two strings to see if they're identical up to the given len.
+**	If so the function returns 0.
+**	else it returns the diffrence between the two chars.
+*/
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

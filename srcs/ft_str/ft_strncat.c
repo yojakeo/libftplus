@@ -6,11 +6,18 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 14:33:08 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:19 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 21:09:17 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Concatenates two strings together upto the given length. while it's in
+**	src and the index less then the max length it copies to the dest and
+**	after either NULL is reached in src or i is no longer less than max length
+**	we NULL the end of dst and return the dst.
+*/
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {

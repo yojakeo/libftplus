@@ -6,11 +6,18 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 13:59:42 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:27 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 21:20:34 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Finds where the given char is found within the given string.
+**	While the index is still within the string it compares chars, if the char
+**	is found then a pointer to the char within the string is returned.
+**	Otherwise return NULL.
+*/
 
 char	*ft_strchr(const char *str, int c)
 {

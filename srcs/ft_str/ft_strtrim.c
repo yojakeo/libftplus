@@ -6,11 +6,17 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 23:30:58 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:14 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/06/22 06:17:46 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Trims the string of white space at the start and end of the string.
+**	Finds the index of the first and last alphanumeric char and copies
+**	the str between those indexes. Returning a fresh string.
+*/
 
 char	*ft_strtrim(char const *s)
 {
