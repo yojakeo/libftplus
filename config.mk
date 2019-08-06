@@ -1,17 +1,5 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    config.mk                                          :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: rreedy <marvin@42.fr>                      +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/04/22 00:16:25 by rreedy            #+#    #+#              #
-#    Updated: 2019/06/20 20:05:16 by rreedy           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 CC := gcc
-INCLUDES := -I./includes -I./includes/ft_printf
+INCLUDES := -I./includes
 CFLAGS += -Wall -Wextra -Werror $(INCLUDES)
 LFLAGS += -L./ -lft
 MODS := ft_charcheck\
@@ -20,6 +8,7 @@ MODS := ft_charcheck\
 		ft_misc\
 		ft_put\
 		ft_str\
+		ft_read\
 		get_next_line\
 
 NAME_COLOR := \e[1;33m

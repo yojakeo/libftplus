@@ -6,15 +6,15 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:47:13 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/22 06:42:07 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 17:58:33 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
 /*
-**	Creates a new string of the given size +1 for NULL terminaton, then
-**	bzeros the string to asure there's no garbage in the memory.
+**	Creates a new string of the given size +1 for NULL termination, then
+**	bzeros the string to assure there's no garbage in the memory.
 */
 
 char	*ft_strnew(size_t size)

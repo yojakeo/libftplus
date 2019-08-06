@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 18:48:11 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 20:41:19 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 17:48:02 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,15 @@
 # include <stdlib.h>
 # include <limits.h>
 
+/*
+**	Macros
+*/
+# define ERROR -1
+# define IF_RET(in, re) if (in) return (re);
+# define ERROR(msg, r) {ft_putendl(msg); return(r);} 
+/*
+**	Structs & Lists
+*/
 typedef struct		s_list
 {
 	void			*content;
@@ -35,6 +44,10 @@ void				ft_putnbr(int nb);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char *str);
 void				ft_putstr_fd(char const *s, int fd);
+/*
+** Read Functions
+*/
+char				**ft_readfd(int fd);
 /*
 ** List Functions
 */

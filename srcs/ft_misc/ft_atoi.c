@@ -6,11 +6,20 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 12:32:35 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:33 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 18:00:45 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	converts a string of chars into an int, is passed *str and while the
+**	current index is any whitespace it passes over them until either a number
+**	or sign is reached. if '-' s (sign) is set to -1. if '+' it is passed over.
+**	While the current index is numeric the previous result is multiplied by 10
+**	and the current index is added to the int. Once the index is no longer
+**	numeric the result is returned.	
+*/
 
 int		ft_atoi(const char *str)
 {

@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 15:57:51 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/22 06:43:14 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 17:58:00 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 /*
 **	Takes in a string and a delimiting char and splices it into a **char.
-**	counts the sub strings by the given delimiter and allocates an approrately
+**	counts the sub strings by the given delimiter and allocates an appropriately
 **	sized **char to fit all substrs. While the current substr index is less
-**	than the total ammount of substrs it copies to the **char's current index
+**	than the total amount of substrs it copies to the **char's current index
 **	till it hits a delimit or \0. keeps looping to the next index and returns
 **	the **char.
 */

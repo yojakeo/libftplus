@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 22:13:05 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/22 22:16:26 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 17:58:39 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 **	Finds the length of a string till either NULL, a delimiter is reached or
-**	the max ammount of chars is reached and returns the size of the string to
+**	the max amount of chars is reached and returns the size of the string to
 **	that point. Also skips delimiters that are at the start.
 */
 

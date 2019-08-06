@@ -6,13 +6,13 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 15:18:04 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:23 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 17:54:16 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-int				ft_strequ(char const *s1, char const *s2)
+int	ft_strequ(char const *s1, char const *s2)
 {
 	if (s1 && s2)
 		return (!ft_strcmp(s1, s2));

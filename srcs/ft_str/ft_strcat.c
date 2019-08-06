@@ -6,14 +6,14 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 14:30:18 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/22 21:12:33 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 17:59:57 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
 /*
-**	Concatenates two strings together. While it's in src it copies to the dest
+**	Concatenates two strings together. While it's in src it copies to the dst
 **	and after NULL is reached in src it NULLs the end and returns the dst.
 */
 

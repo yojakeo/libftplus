@@ -6,14 +6,14 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 15:03:41 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/22 07:13:22 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 17:59:22 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
 /*
-**	Concatenates two strings together while asuring NULL termination from the
+**	Concatenates two strings together while assuring NULL termination from the
 **	given size of the dest. If dst is longer than the size given it'll abort
 **	and return the product of dstsize and the len of src. Else while it's in
 **	src and the index is one less than the dstsize, it copies to the dest and

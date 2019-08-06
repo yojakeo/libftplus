@@ -6,15 +6,15 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 14:33:08 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/22 21:09:17 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 17:59:03 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
 /*
-**	Concatenates two strings together upto the given length. while it's in
-**	src and the index less then the max length it copies to the dest and
+**	Concatenates two strings together up to the given length. while it's in
+**	src and the index less then the max length it copies to the dst and
 **	after either NULL is reached in src or i is no longer less than max length
 **	we NULL the end of dst and return the dst.
 */

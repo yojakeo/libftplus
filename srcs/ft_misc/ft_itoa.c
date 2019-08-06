@@ -6,11 +6,22 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 14:54:23 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:32 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 18:04:41 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+/*
+**	Takes an int and converts it into an ASCII string.
+**	First the length of the int (including it's sign if negative) is stored in
+**	i (index) and a string is allocated to hold the converted int. If the
+**	number is less than 0 then '-' is set to the first index, a new number
+**	is declared as to not modify the original and is made sure to be positive.
+**	while our number isn't 0 the mod of the nbr is taken, converted to ASCII
+**	and stored in the current index, nbr is divided by 10 and the index moves
+**	back. Repeated and then return the resulting string.
+*/
 
 char	*ft_itoa(int n)
 {

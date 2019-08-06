@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 15:13:33 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/22 06:40:16 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/05 17:58:22 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 **	haystack together until a char matches the start of the needle. I is left
 **	at the start of needle while J confirms it's the desired string.
 **	If so then a pointer to the start of the needle within haystack. Else J
-**	is resynced and continues to loop.
+**	is re-synced and continues to loop.
 **	If there is no needle found within len NULL is returned.
 */
 
