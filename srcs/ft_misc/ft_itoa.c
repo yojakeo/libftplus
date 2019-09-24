@@ -6,15 +6,15 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 14:54:23 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 03:37:05 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:27:23 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 /*
 **	Takes an int type (up to long long) and converts to ASCII. If the
-**	number is negitive the result has an '-' added to the start.
+**	number is negitive the result has an '-' it is added to the start.
 */
 
 char	*ft_itoa(long long n)
@@ -36,7 +36,7 @@ char	*ft_itoa(long long n)
 	{
 		if (!(tmp = ft_strjoin("-", res)))
 			return (NULL);
-		ft_strdel(res);
+		ft_strdel(&res);
 		res = tmp;
 	}
 	return (res);

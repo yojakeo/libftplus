@@ -6,15 +6,14 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 02:21:59 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 03:37:18 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:18:38 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 /*
-**	Takes an int and counts the amount of bytes needed to print the integer
-**	including the negative sign.
+**	Takes an int and counts the amount of bytes needed to print the integer.
 */
 
 size_t	ft_intlen(long long n)

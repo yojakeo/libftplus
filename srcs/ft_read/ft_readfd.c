@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 17:44:25 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 16:00:13 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:04:04 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **	The contents are pushed to the new double pointer.
 */
 
-#include "libft.h"
+#include "../../libft.h"
 
 char	**ft_readfd(int fd)
 {

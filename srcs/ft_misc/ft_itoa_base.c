@@ -6,11 +6,11 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/10 02:18:01 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 03:37:08 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:29:19 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 /*
 **	Takes an unsigned int type (up to unsigned LL) and converts to ASCII.
@@ -30,7 +30,7 @@ char	*ft_itoa_base(unsigned long long nbr, int base)
 		return (ft_strdup("0"));
 	if (base < 2 && base > 16)
 		return (NULL);
-	len = ft_intlenbase(nbr);
+	len = ft_intlen_base(nbr, base);
 	if (!(res = ft_strnew(len)))
 		return (NULL);
 	res[--len] = 0;

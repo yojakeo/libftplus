@@ -6,11 +6,11 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 13:52:53 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 15:59:56 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:03:30 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 void	ft_putendl(char const *s)
 {

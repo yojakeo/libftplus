@@ -6,11 +6,11 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:40:25 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 15:47:28 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:14:26 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 /*
 **	Locates the first occurrence of c in the block. Returning a pointer to the

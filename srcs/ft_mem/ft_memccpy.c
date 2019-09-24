@@ -6,11 +6,11 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 14:30:11 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 15:45:32 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:14:13 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 /*
 **	Copies up to a delimiter or the given size from src to dst.

@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 18:48:11 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/05 17:48:02 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:32:05 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
+# include "includes/get_next_line.h"
 
 /*
 **	Macros
 */
-# define ERROR -1
 # define IF_RET(in, re) if (in) return (re);
 # define ERROR(msg, r) {ft_putendl(msg); return(r);} 
 /*
@@ -62,13 +62,14 @@ void				ft_lstpush(t_list **head, t_list *new);
 ** Char Check / Char Functions
 */
 int					ft_isspace(int c);
+int					ft_isotherspace(int c);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
-int					ft_tolower(int c);
-int					ft_toupper(int c);
+int					ft_islower(int c);
+int					ft_isupper(int c);
 /*
 ** Memory Functions
 */
@@ -85,9 +86,10 @@ void				ft_bzero(void *s, size_t n);
 ** Int Functons
 */
 int					ft_atoi(const char *str);
-char				*ft_itoa(int n);
-int					ft_intlen(int n);
-int					ft_intlenbase(int n, int base);
+char				*ft_itoa(long long n);
+char				*ft_itoa_base(unsigned long long nbr, int base);
+size_t				ft_intlen(long long n);
+size_t				ft_intlen_base(unsigned long long n, int base);
 /*
 ** String Functions
 */
@@ -99,6 +101,7 @@ char				*ft_strdup(const char *str);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlen(const char *str);
 size_t				ft_strdlen(char const *str, char c);
+size_t				ft_strsdlen(char const *str, char c);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strncpy(char *dst, const char *src, size_t len);

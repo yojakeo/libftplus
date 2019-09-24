@@ -6,11 +6,9 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/10 03:42:26 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 03:45:16 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 18:36:10 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isupper(int c)
 {

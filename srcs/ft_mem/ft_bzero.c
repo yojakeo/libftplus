@@ -6,11 +6,11 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:46:39 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 15:40:09 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 18:40:58 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 /*
 **	Sets all memory given to 0.

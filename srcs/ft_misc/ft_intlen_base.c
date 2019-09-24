@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_intlenbase.c                                    :+:      :+:    :+:   */
+/*   ft_intlen_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 19:05:10 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 03:37:40 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:23:08 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
-int		ft_intlenbase(unsigned long long n, int base)
+/*
+**	Takes an unsigned int and counts the amount of bytes needed to print
+**	the integer. Takes a base and applies it to the number to count
+**	the amount of places.
+*/
+
+size_t	ft_intlen_base(unsigned long long n, int base)
 {
 	size_t				len;
 	unsigned long long	nbr;
 
 	len = 0;
+	nbr = n;
 	if (base < 2 && base > 16)
 		return (0);
 	if (nbr == 0)

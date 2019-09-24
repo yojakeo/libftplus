@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 15:57:51 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/05 17:58:00 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:06:02 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	**ft_strsplit(char const *s, char c)
 	while (index < (size_t)ft_findsubstrs(s, c))
 	{
 		cpy = 0;
-		if (!(splitstrs[index] = ft_strnew(ft_strdlen(&s[sub], c))))
+		if (!(splitstrs[index] = ft_strnew(ft_strsdlen(&s[sub], c))))
 			return (NULL);
 		while (s[sub] == c)
 			sub++;

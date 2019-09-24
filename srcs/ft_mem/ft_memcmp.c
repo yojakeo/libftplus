@@ -6,11 +6,11 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:31:02 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/10 15:49:56 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/23 21:14:29 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 /*
 **	Compares two blocks of memory. If they're the same 0 is returned. If not
