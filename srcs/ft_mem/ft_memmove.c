@@ -6,11 +6,17 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 00:44:19 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:34 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/10 15:56:04 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
+
+/*
+**	Moves memory of a given size from src to dst. This is safer than memcpy as
+**	it protects if the dst is less than the size of src. It will switch what end
+**	it will copy from to avoid data loss at the start.
+*/
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

@@ -6,11 +6,15 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 14:29:28 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:35 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/10 15:51:01 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
+
+/*
+**	Copies memory if a given size from src to dst.
+*/
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

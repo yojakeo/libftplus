@@ -6,11 +6,15 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:57:26 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:34 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/10 15:57:15 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
+
+/*
+**	Sets memory of a given size to a given value.
+*/
 
 void	*ft_memset(void *b, int c, size_t len)
 {

@@ -6,27 +6,20 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 19:05:10 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:32 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/10 03:37:40 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
 
-int		ft_intlenbase(int n, int base)
+int		ft_intlenbase(unsigned long long n, int base)
 {
-	size_t			len;
-	unsigned int	nbr;
+	size_t				len;
+	unsigned long long	nbr;
 
 	len = 0;
 	if (base < 2 && base > 16)
 		return (0);
-	if (n < 0 && base == 10)
-	{
-		nbr = -n;
-		len++;
-	}
-	else
-		nbr = n;
 	if (nbr == 0)
 		return (1);
 	while (nbr != 0)

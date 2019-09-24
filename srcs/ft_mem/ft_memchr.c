@@ -6,11 +6,16 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:40:25 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:36 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/10 15:47:28 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
+
+/*
+**	Locates the first occurrence of c in the block. Returning a pointer to the
+**	index of the delimiter. If no delimiter is found it returns NULL.
+*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -21,7 +26,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (((unsigned char)c) == ((unsigned char *)s)[i])
 			return ((void *)s + i);
-		i++;
+		++i;
 	}
 	return (NULL);
 }

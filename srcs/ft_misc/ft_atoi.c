@@ -6,11 +6,11 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 12:32:35 by japarbs           #+#    #+#             */
-/*   Updated: 2019/08/05 18:00:45 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/10 03:49:02 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
 
 /*
 **	converts a string of chars into an int, is passed *str and while the

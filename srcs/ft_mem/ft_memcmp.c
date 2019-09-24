@@ -6,11 +6,16 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:31:02 by japarbs           #+#    #+#             */
-/*   Updated: 2019/06/21 19:43:36 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/08/10 15:49:56 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
+
+/*
+**	Compares two blocks of memory. If they're the same 0 is returned. If not
+**	the different between the two addresses is returned.
+*/
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -21,7 +26,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	{
 		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
 			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
-		i++;
+		++i;
 	}
 	return (0);
 }
