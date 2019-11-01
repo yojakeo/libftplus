@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdlen.c                                       :+:      :+:    :+:   */
+/*   ft_strtolower.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/10 14:38:33 by japarbs           #+#    #+#             */
-/*   Updated: 2019/09/29 16:34:15 by japarbs          ###   ########.fr       */
+/*   Created: 2019/09/29 18:28:05 by japarbs           #+#    #+#             */
+/*   Updated: 2019/09/29 18:30:53 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-/*
-**	Finds the length of a string till either NULL or a delimiter is reached
-**	and returns the size of the string to that point.
-*/
-
-size_t	ft_strdlen(char const *str, char c)
+void	ft_strtolower(char *str)
 {
-	size_t	i;
+	size_t i;
 
 	i = 0;
-	while (str[i] && str[i] != c)
-		i++;
-	return (i);
+	while (str[i])
+	{
+		str[i] = ft_tolower(str[i]);
+		++i;
+	}
 }

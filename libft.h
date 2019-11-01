@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 18:48:11 by japarbs           #+#    #+#             */
-/*   Updated: 2019/09/23 22:02:14 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/29 18:30:38 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,6 +140,12 @@ char				*ft_strdup(const char *str);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
+
+int					ft_tolower(int c);
+int					ft_toupper(int c);
+
+void				ft_strtoupper(char *str);
+void				ft_strtolower(char *str);
 /*
 ** Extra Functions
 */

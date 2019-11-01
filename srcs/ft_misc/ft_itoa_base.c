@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/10 02:18:01 by japarbs           #+#    #+#             */
-/*   Updated: 2019/09/23 21:29:19 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/09/29 16:33:32 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ char	*ft_itoa_base(unsigned long long nbr, int base)
 	len = ft_intlen_base(nbr, base);
 	if (!(res = ft_strnew(len)))
 		return (NULL);
-	res[--len] = 0;
 	while (nbr != 0)
 	{
 		res[--len] = key[nbr % base];
