@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 16:18:40 by japarbs           #+#    #+#             */
-/*   Updated: 2019/07/01 18:29:43 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/11/19 20:29:56 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,11 @@ int		process_line(int fd, char **line, char **fdarr, int bres)
 	nlpos = 0;
 	while (fdarr[fd][nlpos] != '\n' && fdarr[fd][nlpos] != '\0')
 		nlpos++;
-	IF_RET(!(*line = ft_strsub(fdarr[fd], 0, nlpos)), -1)
+	if (!(*line = ft_strsub(fdarr[fd], 0, nlpos)))
+		return (-1);
 	statsize = ft_strlen(ft_strchr(fdarr[fd], '\n'));
-	IF_RET(!(tmp = ft_strsub(fdarr[fd], nlpos + 1, statsize)), -1)
+	if (!(tmp = ft_strsub(fdarr[fd], nlpos + 1, statsize)))
+		return (-1);
 	ft_strdel(&fdarr[fd]);
 	fdarr[fd] = tmp;
 	return (1);
@@ -68,18 +70,21 @@ int		get_next_line(const int fd, char **line)
 	char			buffer[BUFF_SIZE + 1];
 	char			*tmp;
 
-	IF_RET(fd <= -1 || fd > OPEN_MAX || !line, -1)
+	if (fd <= -1 || fd > OPEN_MAX || !line)
+		return (-1);
 	if (!(fdarr[fd]))
 		fdarr[fd] = ft_strnew(0);
 	while ((bres = read(fd, buffer, BUFF_SIZE)) > 0)
 	{
 		buffer[bres] = '\0';
-		IF_RET(!(tmp = ft_strjoin(fdarr[fd], buffer)), -1)
+		if (!(tmp = ft_strjoin(fdarr[fd], buffer)))
+			return (-1);
 		ft_strdel(&fdarr[fd]);
 		fdarr[fd] = tmp;
 		if (ft_strchr(buffer, '\n'))
 			break ;
 	}
-	IF_RET(bres < 0, -1)
+	if (bres < 0)
+		return (-1);
 	return (process_line(fd, line, fdarr, bres));
 }
