@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../../includes/libft.h"
 
 /*
 **	Copies memory if a given size from src to dst.

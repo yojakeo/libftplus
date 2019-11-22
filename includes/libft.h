@@ -6,7 +6,7 @@
 /*   By: japarbs <japarbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 18:48:11 by japarbs           #+#    #+#             */
-/*   Updated: 2019/09/29 18:30:38 by japarbs          ###   ########.fr       */
+/*   Updated: 2019/11/21 21:08:40 by japarbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
-# include "includes/get_next_line.h"
+# include "get_next_line.h"
+# include "ft_ftoa.h"
+# include "ft_printf.h"
 
 /*
 **	Macros
@@ -97,6 +99,10 @@ char				*ft_itoa(long long n);
 char				*ft_itoa_base(unsigned long long nbr, int base);
 size_t				ft_intlen(long long n);
 size_t				ft_intlen_base(unsigned long long n, int base);
+/*
+**	Math functions
+*/
+long				ft_pow(int a, int b);
 /*
 **	String Functions: Traversing / Indexing
 */

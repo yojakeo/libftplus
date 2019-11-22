@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../../includes/libft.h"
 
 /*
 **	Finds the length of a string till either NULL or a delimiter is reached

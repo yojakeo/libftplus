@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../../includes/libft.h"
 
 /*
 **	converts a string of chars into an int, is passed *str and while the

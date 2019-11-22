@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../../includes/libft.h"
 
 /*
 **	Takes an int type (up to long long) and converts to ASCII. If the

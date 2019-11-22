@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../../includes/libft.h"
 
 /*
 **	Takes in a string and a delimiting char and splices it into a **char.

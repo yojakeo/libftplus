@@ -8,8 +8,11 @@ MODS := ft_charcheck\
 		ft_misc\
 		ft_put\
 		ft_str\
+		ft_math\
+		ft_ftoa\
 		ft_read\
 		get_next_line\
+		ft_printf\
 
 NAME_COLOR := \e[1;33m
 COMPILE_COLOR := \e[1;32m
